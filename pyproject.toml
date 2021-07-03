@@ -17,6 +17,7 @@ tensorflow-datasets = "^4.3.0"
 ipywidgets = "^7.6.3"
 jupyter = "^1.0.0"
 IProgress = "^0.4"
+seaborn = "^0.11.1"
 
 [tool.poetry.dev-dependencies]
 pytest = "^6.2.4"
