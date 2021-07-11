@@ -1559,6 +1559,22 @@ googleapis-common-protos = ">=1.52.0,<2"
 protobuf = ">=3.13,<4"
 
 [[package]]
+name = "tensorflow-text"
+version = "2.5.0"
+description = "TF.Text is a TensorFlow library of text related ops, modules, and subgraphs."
+category = "main"
+optional = false
+python-versions = "*"
+
+[package.dependencies]
+tensorflow = ">=2.5.0,<2.6"
+tensorflow-hub = ">=0.8.0"
+
+[package.extras]
+tensorflow_cpu = ["tensorflow-cpu (>=2.4.0rc0,<2.5)"]
+tests = ["absl-py", "pytest", "tensorflow-datasets (>=3.2.0)"]
+
+[[package]]
 name = "termcolor"
 version = "1.1.0"
 description = "ANSII Color formatting for output in terminal."
@@ -1750,7 +1766,7 @@ testing = ["pytest (>=4.6)", "pytest-checkdocs (>=2.4)", "pytest-flake8", "pytes
 [metadata]
 lock-version = "1.1"
 python-versions = "^3.8"
-content-hash = "3f972f2f44ea073b02b1ada8e6f31b45538ff032b22625bb371430ced821a378"
+content-hash = "30d98c3de4a6809d2f36db58108247ab78b2c3f0b3c1317c3223942f2c06216b"
 
 [metadata.files]
 absl-py = [
@@ -2872,6 +2888,20 @@ tensorflow-hub = [
 ]
 tensorflow-metadata = [
     {file = "tensorflow_metadata-1.1.0-py3-none-any.whl", hash = "sha256:83996a4952024e74c22db65aba1d7e35fcc1494a3e1bd7efc17a04337544f73f"},
+]
+tensorflow-text = [
+    {file = "tensorflow_text-2.5.0-cp36-cp36m-macosx_10_9_x86_64.whl", hash = "sha256:cca283ef8cba1e604c0c3b5429190fc92f6fb424ffa0e139665fc160f99dc32b"},
+    {file = "tensorflow_text-2.5.0-cp36-cp36m-manylinux1_x86_64.whl", hash = "sha256:3e20930672164e8a0506f1f0786e989baf4658cc9368a47cbe9939d3450a2c3a"},
+    {file = "tensorflow_text-2.5.0-cp36-cp36m-win_amd64.whl", hash = "sha256:ca193c88dcda66870ac0243c47b6b52a00739cabdcb7e7b408c9363e29898d81"},
+    {file = "tensorflow_text-2.5.0-cp37-cp37m-macosx_10_9_x86_64.whl", hash = "sha256:04230d7fab58e7a6f6f8b3ffda49521823cb1591d385c98258ea4576ce0b65f1"},
+    {file = "tensorflow_text-2.5.0-cp37-cp37m-manylinux1_x86_64.whl", hash = "sha256:381c470bab473b19b8b154bf2aa3599ce9080c71014bb01596e621c1dd171a90"},
+    {file = "tensorflow_text-2.5.0-cp37-cp37m-win_amd64.whl", hash = "sha256:63bf89711d35a4e74c6391162e6f6d604cf80051607f7c7b14dfcb7faec524ed"},
+    {file = "tensorflow_text-2.5.0-cp38-cp38-macosx_10_9_x86_64.whl", hash = "sha256:57647b615fad154e308e84006148cb7affced3d375640856aa02b5a91a0a2ede"},
+    {file = "tensorflow_text-2.5.0-cp38-cp38-manylinux1_x86_64.whl", hash = "sha256:0eba717735fc5bb0ca24440e14845797180fb2f708beb6807b0edcb24de3aa3c"},
+    {file = "tensorflow_text-2.5.0-cp38-cp38-win_amd64.whl", hash = "sha256:827cee446836499abab938997030a6d60d1a023932de1fabfb0a18225a3f203a"},
+    {file = "tensorflow_text-2.5.0-cp39-cp39-macosx_10_9_x86_64.whl", hash = "sha256:414cb7bfff1229cf2a45629ec8010ef9bb38af3bc8eb3f4324399110f9ddc2df"},
+    {file = "tensorflow_text-2.5.0-cp39-cp39-manylinux1_x86_64.whl", hash = "sha256:f94deb2a291d0cc02f2147b4ee9711cd2904e591c1480034de198dad0be10da6"},
+    {file = "tensorflow_text-2.5.0-cp39-cp39-win_amd64.whl", hash = "sha256:337fde4097482c145c3f8e5f96c5bf75ec416948fa0b87e9d9330f75855eb910"},
 ]
 termcolor = [
     {file = "termcolor-1.1.0.tar.gz", hash = "sha256:1d6d69ce66211143803fbc56652b41d73b4a400a2891d7bf7a1cdf4c02de613b"},
